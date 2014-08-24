@@ -48,8 +48,7 @@ class MyProfileController extends Controller {
 			$options['conditions'] += array('TEmployeeData.emp_no' => $empNo);
 		}
 		if (!empty($empName)) {
-// 名前を苗字漢字両方持つカラムをDBに追加してもらう必要あり！！
-			$options['conditions'] += array('TEmployeeData.emp_nm_kanji_name LIKE' => '%'.$empName.'%');
+			$options['conditions'] += array('CONCAT(TEmployeeData.emp_nm_kanji_lastname, TEmployeeData.emp_nm_kanji_name) LIKE' => '%'.$empName.'%');
 		}
 		if (!empty($joinedDate)) {
 			$options['conditions'] += array('TEmployeeData.joined_date LIKE' => $joinedDate.'%');

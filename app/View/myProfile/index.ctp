@@ -19,9 +19,9 @@
 <div class="container">
 <form name="myprofilesearch" class="form-myprofile" action="/myProfile/search" method="post">
 	<h3>MyProfile検索</h3>
-	<input type="text" class="form-control" name="empNo" placeholder="社員番号" maxlength="4" value="<?php echo $empNo; ?>" /><br>
+	<input type="text" style="ime-mode: disabled" class="form-control" name="empNo" placeholder="社員番号" maxlength="4" value="<?php echo $empNo; ?>" /><br>
 	<input type="text" class="form-control" name="empName" placeholder="氏名" value="<?php echo $empName; ?>" /><br>
-	<input type="text" class="form-control" name="joinedDate" placeholder="入社年月" maxlength="6" value="<?php echo $joinedDate; ?>" /><br>
+	<input type="text" style="ime-mode: disabled" class="form-control" name="joinedDate" placeholder="入社年月" maxlength="6" value="<?php echo $joinedDate; ?>" /><br>
 	<input type="submit" class="btn btn-primary search_btn" value="検索"/>
 </form>
 
@@ -41,10 +41,10 @@
 		<?php foreach ($resultList as $profileData): ?>
 		<tr>
 			<td><?php echo $count; ?></td>
-			<td><a href="/myProfile/update"><?php echo $profileData['TEmployeeData']['emp_no']; ?></td></a>
+			<td><a href="/myprofiledetail?empNo=<?php echo $profileData['TEmployeeData']['emp_no']; ?>"><?php echo $profileData['TEmployeeData']['emp_no']; ?></td></a>
 			<td><?php echo $profileData['TEmployeeData']['emp_nm_kanji_lastname']; ?>　<?php echo $profileData['TEmployeeData']['emp_nm_kanji_name']; ?></td>
-			<td><?php echo $profileData['TEmployeeData']['joined_date']; ?></td>
-			<td><?php echo $profileData['TProfileData']['update_ymd']; ?></td>
+			<td><?php echo(date('Y年n月j日', strtotime($profileData['TEmployeeData']['joined_date']))); ?></td>
+			<td><?php echo(date('Y年n月j日', strtotime($profileData['TProfileData']['update_ymd']))); ?></td>
 		</tr>
 		<?php $count++; ?>
 		<?php endforeach; ?>
