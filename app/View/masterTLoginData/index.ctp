@@ -11,7 +11,7 @@
 function Click_Sub(obj) {
 
 	// 選択行位置を取得
-	var pos = obj.rowIndex
+	var pos = obj.rowIndex;
 	// 本体部分のコントロールを取得
 	var myTbl = document.getElementById("table_main");
 
@@ -19,8 +19,14 @@ function Click_Sub(obj) {
 	for (var i=0; i<myTbl.rows.length; i++) {
 		myTbl.rows[i].style.backgroundColor="#FFFFFF";
 	}
+
+	// 従業員番号を隠し項目に設定
+	// 共通化ができなかったので、各イベント毎に隠し項目を用意
+	document.forms.update_btn.hidden_upd_no.value = myTbl.rows[pos].cells[0].firstChild.data;
+	document.forms.delete_btn.hidden_del_no.value = myTbl.rows[pos].cells[0].firstChild.data;
+
 	// 選択行のみ色を変更する。
-	obj.style.backgroundColor="#cccccc"
+	obj.style.backgroundColor="#cccccc";
 }
 </script>
 
@@ -47,7 +53,7 @@ function Click_Sub(obj) {
 <TBODY>
 	<TR>
 	<TD colspan="9">
-	<DIV style="height:100px; overflow:auto;">
+	<DIV style="height:200px; overflow:auto;">
 
 	<!-- スクロールバーを出すため、本体部分は別テーブルとして宣言 -->
 	<!-- 各項目はヘッダ部と同サイズとしています。 -->
@@ -91,6 +97,16 @@ function Click_Sub(obj) {
 	</TR>
 </TBODY>
 </TABLE>
+
+<form action="/masterTLoginData/preUpdate" method="post" name="update_btn">
+	<input type="hidden" name="hidden_upd_no" value="0000" />
+	<p><input type="submit" value="更新" /></p>
+</form>
+
+<form action="/masterTLoginData/delete" method="post" name="delete_btn">
+	<input type="hidden" name="hidden_del_no" value="0000" />
+	<p><input type="submit" value="削除" /></p>
+</form>
 
 <form action="/masterTLoginData/back" method="post">
 	<p><input type="submit" value="戻る" /></p>
