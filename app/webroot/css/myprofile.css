@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/*---- ボディ ----*/
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #FFF;
+}
+
+.myprofile_table_wrap {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*---- フォーム ----*/
+.form-myprofile {
+    min-width: 400px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-myprofile .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.form-myprofile .form-control:focus {
+    z-index: 2;
+}
+
+.form-control{
+    display: inline;
+    width: 300px;
+    margin: 2px;
+}
+
+.search_btn{
+    margin: 8px 0 0 8px;
+    height: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.regist_btn{
+    margin: 8px 0 0 8px;
+    height: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.delete_btn{
+    margin: 8px 0;
+    height: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.radio_option {
+    margin: 18px 0;
+}
+
+.radio_option select {
+    padding: 5px;
+    width:160px;
+}
+
+/*---- テーブル ----*/
+.myprofile_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.myprofile_table th {
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #b9b9b9;
+}
+
+.myprofile_table th.s {
+    width: 260px;
+}
+
+.myprofile_table th.ss {
+    width: 32px;
+}
+
+.myprofile_table td {
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+}

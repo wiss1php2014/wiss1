@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*---- ボディ ----*/
+body {
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+/*---- サイト名 ----*/
+h1.site_title {
+    font-size:120%;
+    color:#FFF;
+    font-weight:bold;
+}
+
+/*---- メニュー ----*/
+h2.menu_title {
+    font-size:100%;
+    font-weight:bold;
+    padding:8px 0 18px 0;
+    margin:0;
+}
+
+/**---- サイドバー、メイン部分のサイズ定義 ----**/
+.main {
+    padding:0;
+    margin-bottom:0;
+}
+
+.main .page-header {
+    margin-top: 0;
+}
+
+div.sidebar {
+    width: 200px;
+    padding:10px 0 0 20px;
+}
+
+div.main {
+    margin-left:200px;
+    padding-right:200px;
+    width:100%;
+}
+
+#main_area {
+    width:100%;
+    height:1000px;
+    padding-bottom:50px;
+}
+
+/*---- サイドバー ----*/
+div.container-fluid {
+    font-weight: normal;
+    line-height: 1.5;
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+    }
+}
+
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav-sidebar > .active > a {
+    color: #fff;
+    background-color: #428bca;
+}
+
+.nav-sidebar > li > a:hover,
+.nav-sidebar > li > a:focus {
+    color: #fff;
+    background-color: #b0c4de;
+}
+
+/*---- プレースホルダー ----*/
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+

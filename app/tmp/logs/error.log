@@ -1,0 +1,1013 @@
+2014-03-14 17:52:12 Error: [MissingControllerException] Controller class XamppController could not be found.
+Exception Attributes: array (
+  'class' => 'XamppController',
+  'plugin' => NULL,
+)
+Request URL: /xampp/
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-12 15:38:46 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /login
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-12 17:03:25 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post?mailAddress=aa&password=aa
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-12 17:03:31 Error: [MissingActionException] Action LoginController::auth() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'auth',
+)
+Request URL: /login/auth?mailAddress=&password=
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-12 17:03:50 Error: [MissingActionException] Action LoginController::auth() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'auth',
+)
+Request URL: /login/auth
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-12 17:04:45 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Login\auth.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Login\\auth.ctp',
+)
+Request URL: /login/auth
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-12 17:29:24 Error: [MissingActionException] Action LoginController::aaa() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'aaa',
+)
+Request URL: /login/aaa/index
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-12 17:51:36 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\pleiades\workspace\wiss1\app\Controller\LoginController.php, line 13]
+2014-04-12 17:51:36 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /login/auth
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\pleiades\wor...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\pleiades\wor...', 13, Array)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\pleiades\wor...', 13, Array)
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 18:00:12 Error: [MissingControllerException] Controller class Log.jsController could not be found.
+Exception Attributes: array (
+  'class' => 'Log.jsController',
+  'plugin' => NULL,
+)
+Request URL: /log.js?id=859f88-rx4md45
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-13 04:20:08 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/test.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 04:21:48 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/test.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 04:21:52 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/test.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 04:22:18 Error: [MissingActionException] Action LoginController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'webroot',
+)
+Request URL: /login/webroot/js/test.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 04:22:37 Error: [MissingActionException] Action LoginController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'webroot',
+)
+Request URL: /login/webroot/js/test.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 04:23:00 Error: [MissingActionException] Action LoginController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'webroot',
+)
+Request URL: /login/webroot/js/test.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 04:23:24 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/test.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 04:24:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/test.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-13 05:23:32 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Password\complete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Password\\complete.ctp',
+)
+Request URL: /password/complete
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 05:41:08 Error: Fatal Error (4): syntax error, unexpected '.', expecting '{' in [C:\pleiades\workspace\wiss1\app\Controller\PasswordinformController.php, line 8]
+2014-04-13 05:41:08 Error: [FatalErrorException] syntax error, unexpected '.', expecting '{'
+Request URL: /passwordinform/index
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\pleiades\wor...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\pleiades\wor...', 8, Array)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\pleiades\wor...', 8, Array)
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-13 05:41:23 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Passwordinform\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Passwordinform\\index.ctp',
+)
+Request URL: /passwordinform/index
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordinformController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 05:42:29 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Passwordinform\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Passwordinform\\index.ctp',
+)
+Request URL: /passwordinform/index
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordinformController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 05:43:02 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Passwordinform\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Passwordinform\\index.ctp',
+)
+Request URL: /passwordinform/index
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordinformController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 05:43:33 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Passwordinform\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Passwordinform\\index.ctp',
+)
+Request URL: /passwordinform/index
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordinformController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 05:45:01 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Passwordinform\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Passwordinform\\index.ctp',
+)
+Request URL: /passwordinform/
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordinformController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 05:45:51 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Passwordinform\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Passwordinform\\index.ctp',
+)
+Request URL: /passwordinform/
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordinformController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 05:45:59 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Passwordinform\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Passwordinform\\index.ctp',
+)
+Request URL: /passwordinform/
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordinformController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 05:47:18 Error: [MissingViewException] View file "C:\pleiades\workspace\wiss1\app\View\Passwordinform\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\pleiades\\workspace\\wiss1\\app\\View\\Passwordinform\\index.ctp',
+)
+Request URL: /passwordinform/
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordinformController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 05:54:25 Error: [MissingControllerException] Controller class PasswordchangeController could not be found.
+Exception Attributes: array (
+  'class' => 'PasswordchangeController',
+  'plugin' => NULL,
+)
+Request URL: /passwordchange/
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-13 06:25:47 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/login/login_bg.jpg
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-13 06:25:47 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/login/loginbox_bg.png
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-13 06:25:47 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/login/inp_login.gif
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-13 06:25:47 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/login/submit_login.gif
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-13 06:28:50 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /images/login/submit_login.gif
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-13 06:45:38 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:38 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:38 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:38 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:50 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:50 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:50 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:50 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:53 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:53 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:53 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:53 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:55 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:55 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:55 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:55 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:57 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:57 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:57 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:45:57 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:46:41 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:46:41 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:46:41 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:46:41 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:01 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:01 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:01 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:01 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:03 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:03 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+))
+#3 {main}
+2014-04-13 06:47:06 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:06 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:06 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:06 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:08 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:08 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+n}
+2014-04-13 06:47:08 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:10 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:10 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:10 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:18 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:18 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:18 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:38 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:38 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:38 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:38 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:41 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:41 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:41 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery-1.4.1.min.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:41 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:57 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/jquery.pngFix.pack.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:57 Error: [MissingActionException] Action LoginController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'js',
+)
+Request URL: /login/js/jquery/custom_jquery.js
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:47:57 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-13 06:48:06 Error: [MissingActionException] Action LoginController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'LoginController',
+  'action' => 'css',
+)
+Request URL: /login/css/screen.css
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-25 03:54:23 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\pleiades\workspace\wiss1\app\Controller\PasswordinformController.php, line 33]
+2014-05-25 03:54:24 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /passwordinform/send
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\pleiades\wor...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\pleiades\wor...', 33, Array)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\pleiades\wor...', 33, Array)
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-25 03:56:07 Error: [SocketException] SMTP server did not accept the connection or trying to connect to non TLS SMTP server using TLS.
+Request URL: /passwordinform/send
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Network\Email\SmtpTransport.php(59): SmtpTransport->_connect()
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Network\Email\CakeEmail.php(1122): SmtpTransport->send(Object(CakeEmail))
+#2 C:\pleiades\workspace\wiss1\app\Controller\PasswordinformController.php(48): CakeEmail->send('???????????????')
+#3 [internal function]: PasswordinformController->send()
+#4 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PasswordinformController), Array)
+#5 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordinformController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-05-25 05:06:12 Error: Fatal Error (1): Call to a member function updateAll() on a non-object in [C:\pleiades\workspace\wiss1\app\Controller\PasswordchangeController.php, line 31]
+2014-05-25 05:06:12 Error: [FatalErrorException] Call to a member function updateAll() on a non-object
+Request URL: /passwordchange/update
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\pleiades\wor...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\pleiades\wor...', 31, Array)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\pleiades\wor...', 31, Array)
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-25 05:06:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'saiki002' in 'field list'
+Request URL: /passwordchange/update
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\pleiades\workspace\wiss1\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `test`.`...', Array)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Model\Datasource\Database\Mysql.php(400): DboSource->execute('UPDATE `test`.`...')
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Model\Model.php(2541): Mysql->update(Object(LoginData), Array, NULL, Array)
+#4 C:\pleiades\workspace\wiss1\app\Controller\PasswordchangeController.php(37): Model->updateAll(Array, Array)
+#5 [internal function]: PasswordchangeController->update()
+#6 C:\pleiades\workspace\wiss1\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PasswordchangeController), Array)
+#7 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\pleiades\workspace\wiss1\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PasswordchangeController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\pleiades\workspace\wiss1\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-25 05:14:42 Error: Fatal Error (1): Class 'Sanitize' not found in [C:\pleiades\workspace\wiss1\app\Controller\PasswordchangeController.php, line 34]
+2014-05-25 05:14:42 Error: [FatalErrorException] Class 'Sanitize' not found
+Request URL: /passwordchange/update
+Stack Trace:
+#0 C:\pleiades\workspace\wiss1\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Sanitize...', 'C:\pleiades\wor...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Sanitize...', 'C:\pleiades\wor...', 34, Array)
+#2 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Sanitize...', 'C:\pleiades\wor...', 34, Array)
+#3 C:\pleiades\workspace\wiss1\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
