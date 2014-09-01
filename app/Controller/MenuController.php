@@ -15,7 +15,7 @@ class MenuController extends Controller {
 	 */
 	public function master() {
 		// 画面に渡す変数をセット
-		$this->set('message','マスタメンテナンス画面に遷移');
+		$this->redirect('/master');
 	}
 
 	/**
