@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.inputL {
+	float: left;
+}
+
+.inputR {
+	float: left;
+	padding-top: 10px;
+	padding-left: 5px;
+	vertical-align: bottom;
+}
+
+.checkboxL {
+	float: left;
+	padding-top: 10px;
+	vertical-align: middle;
+}
+
+.checkboxR {
+	float: left;
+	padding-top: 10px;
+	padding-left: 15px;
+	vertical-align: middle;
+}
+
+.checkboxI {
+	width: 20px;
+	float: left;
+	vertical-align: middle;
+}
+
+
+.int {
+	float: left;
+	vertical-align: middle;
+}
+
+.point {
+	float: left;
+	padding-top: 10px;
+	padding-left: 5px;
+	vertical-align: middle;
+
+}
+
+.decimal {
+	float: left;
+	padding-left: 5px;
+	vertical-align: bottom;
+}

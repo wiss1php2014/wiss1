@@ -38,22 +38,22 @@ class PasswordchangeController extends AppController {
 		$errMsg='';
 		// 入力チェック
 		if(empty($mailAddress)){
-			$errMsg = $errMsg.'<font color="red">メールアドレスを入力してください</font><br/>';
+			$errMsg = $errMsg.'メールアドレスを入力してください<br/>';
 		}
 		if(empty($nowPassword)){
-			$errMsg = $errMsg.'<font color="red">変更前のパスワードを入力してください</font><br/>';
+			$errMsg = $errMsg.'変更前のパスワードを入力してください<br/>';
 		}
 		if(empty($newPassword)){
-			$errMsg = $errMsg.'<font color="red">変更後のパスワードを入力してください</font><br/>';
+			$errMsg = $errMsg.'変更後のパスワードを入力してください<br/>';
 		}
 		if(empty($newPasswordConfirm)){
-			$errMsg = $errMsg.'<font color="red">確認用のパスワードを入力してください</font><br/>';
+			$errMsg = $errMsg.'確認用のパスワードを入力してください<br/>';
 		}
 
 		if($nowPassword===$newPassword){
 
 		}else{
-			$errMsg = $errMsg.'<font color="red">確認用のパスワードが違います</font><br/>';
+			$errMsg = $errMsg.'確認用のパスワードが違います<br/>';
 		}
 
 		if(empty($errMsg)){
@@ -96,7 +96,7 @@ class PasswordchangeController extends AppController {
 		}else{
 			// 失敗の場合は戻る
 			// エラーメッセージ
-			$errMsg = $errMsg.'<font color="red">メールアドレスが登録されていません</font><br/>';
+			$errMsg = $errMsg.'メールアドレスが登録されていません<br/>';
 			$this->set('errMsg',$errMsg);
 
 			// 入力値

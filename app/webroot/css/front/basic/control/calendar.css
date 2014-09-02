@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.registerYearL {
+	width: 70px;
+	float: left;
+}
+
+.registerYearR {
+	float: left;
+	padding-top: 10px;
+}
+
+
+/* sample.CSSから必要なものだけ抜出し */
+body {
+	font-size: 12px;
+}
+
+th {
+ text-align: center;
+}
+
+th.success {
+	width: 30%
+}
+
+tr.success {
+	text-align: center;
+}
+
+.buttonArea {
+	text-align: right;
+	padding-bottom: 20px;
+}

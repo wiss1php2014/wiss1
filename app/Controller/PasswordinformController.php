@@ -43,7 +43,7 @@ class PasswordinformController extends AppController {
 		// 判定
 		if(empty($result)){
 			// 失敗の場合
-			$errMsg = '<font color="red">メールアドレスが登録されていません</font><br/>';
+			$errMsg = 'メールアドレスが登録されていません<br/>';
 			$this->set('errMsg', $errMsg);
 			$this->set('mailAddress',$mailAddress);
 			$this->render('index');

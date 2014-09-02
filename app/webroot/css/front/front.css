@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body {
+	background-color: #F0FFF0;
+}
+
+/* ストライプテーブル
+ −−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−*/
+/* 検索テーブル */
+table tr.searchTableOdd td {
+	background: #f0fff0;
+}
+
+table tr.searchTableEven td {
+	background: #f0f8ff;
+}
+
+/* 検索結果テーブル */
+table tr.listTableOdd td {
+	background: #f0fff0;
+}
+
+table tr.listTableEven td {
+	background: #f0f8ff;
+}
+
+/* 詳細内容、訂正、新規、確認、完了 */
+table tr.dataTableOdd td {
+	background: #f0fff0;
+}
+
+table tr.dataTableEven td {
+	background: #f0f8ff;
+}

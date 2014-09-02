@@ -12,8 +12,8 @@ class LoginController extends AppController {
 	 */
 	public function index(){
 		//何もない場合は wiss1/app/View/[コントローラ名]/[アクションメソッド名].ctpに遷移
-		$password ='';
-		$aaad = '';
+		$email = "";
+		$this->set('email', $email);
 	}
 
 	/**
@@ -36,15 +36,19 @@ class LoginController extends AppController {
 		// モデル(エンティティ)クラスのインスタンスを生成
 		$this->TLoginData = new TLoginData;
 
-		// 検索条件を使って検索処理(SELECT * FROM t_login_datas WHERE... )
-		$result = $this->TLoginData->find('all', $conditions);
+		// 検索処理
+		$result = $this->TLoginData->find('first', $conditions);
 
 		// 判定
 		if(empty($result)){
 			// 失敗の場合のリダイレクト
-			$this->redirect('index');
+			$this->set('email', $mailAddress);
+			$this->set('errFlg', "true");
+			$this->render('index');
 		}else{
 			// 成功の場合のリダイレクト
+			$employeeNo = $result['TLoginData']['emp_no'];
+			$this->Session->write(SESSION_KEY, $employeeNo);
 			$this->redirect('/menu/index');
 		}
 	}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.inputL {
+	width: 110px;
+	float: left;
+}
+
+.inputC {
+	float: left;
+	padding-top: 5px;
+	width: 20px;
+}
+
+.inputR {
+	width: 110px;
+	float: left;
+}
+

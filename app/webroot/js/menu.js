@@ -1,24 +1,54 @@
+// メニューへのアコーディオンの適用
+$().ready(function() {
 
-/* ----- static values ----- */
+	var group = $("#menuGroupNo").text();
 
-/* ----- define ----- */
+	$("#menu").accordion({
+		header : ".menuHeader",
+		collapsible : false,
+		ollasible : true,
+		heightStyle : "content",
+		active : Number(group),
+		animate : {
+			duration : 10
+		}
+	});
 
-/* ----- 初期化処理 ----- */
-$(function() {
-alert("");
-    initActiveLink();
 });
 
-/* ----- リンク制御 ----- */
-function initActiveLink() {
-    // メニューリンクがクリックされた場合
-    $(".nav-sidebar li").click(function(){
+$().ready(function() {
 
-        // 現在アクティブとなっているメニューリンクを非アクティブにする
-        $(".nav-sidebar li").removeClass("active");
+	var groupSub = $("#basicMenuGroupNo").text();
+	
+	$("#basicMenu").accordion({
+		header : ".basicMenuHeader",
+		collapsible : false,
+		ollasible : true,
+		heightStyle : "content",
+		active : Number(groupSub),
+		animate : {
+			duration : 10
+		}
+	});
+});
 
-        // クリックされたメニューリンクをアクティブにする
-        $(this).addClass("active");
-    });
 
-} ;
+
+// 暫定：メニューの各リンクは/view以下を絶対パスで参照しているので、コンテキストルートを追加する。
+$().ready(function() {
+	var root = location.pathname.substring(0, location.pathname.indexOf("/view/") + 5);
+	$("a.menuItem").each(function() {
+		var href = root + $(this).attr("href");
+		$(this).attr("href", href);
+	});
+});
+
+//暫定：メニューの各リンクは/view以下を絶対パスで参照しているので、コンテキストルートを追加する。
+$().ready(function() {
+	var root = location.pathname.substring(0, location.pathname.indexOf("/view/") + 5);
+	$("a.basicMenuItem").each(function() {
+		var href = root + $(this).attr("href");
+		$(this).attr("href", href);
+	});
+});
+

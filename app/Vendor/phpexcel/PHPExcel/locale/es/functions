@@ -1,0 +1,439 @@
+##
+## PHPExcel
+##
+
+## Copyright (c) 2006 - 2013 PHPExcel
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+##
+## @category   PHPExcel
+## @package    PHPExcel_Calculation
+## @copyright  Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
+## @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
+## @version    1.8.0, 2014-03-02
+##
+## Data in this file derived from http://www.piuha.fi/excel-function-name-translation/
+##
+##
+
+
+##
+##	Add-in and Automation functions				Funciones de complementos y automatizaci坦n
+##
+GETPIVOTDATA		= IMPORTARDATOSDINAMICOS		##	Devuelve los datos almacenados en un informe de tabla din叩mica.
+
+
+##
+##	Cube functions						Funciones de cubo
+##
+CUBEKPIMEMBER		= MIEMBROKPICUBO			##	Devuelve un nombre, propiedad y medida de indicador de rendimiento clave (KPI) y muestra el nombre y la propiedad en la celda. Un KPI es una medida cuantificable, como los beneficios brutos mensuales o la facturaci坦n trimestral por empleado, que se usa para supervisar el rendimiento de una organizaci坦n.
+CUBEMEMBER		= MIEMBROCUBO				##	Devuelve un miembro o tupla en una jerarqu鱈a de cubo. Se usa para validar la existencia del miembro o la tupla en el cubo.
+CUBEMEMBERPROPERTY	= PROPIEDADMIEMBROCUBO			##	Devuelve el valor de una propiedad de miembro del cubo Se usa para validar la existencia de un nombre de miembro en el cubo y para devolver la propiedad especificada para este miembro.
+CUBERANKEDMEMBER	= MIEMBRORANGOCUBO			##	Devuelve el miembro n, o clasificado, de un conjunto. Se usa para devolver uno o m叩s elementos de un conjunto, por ejemplo, el representante con mejores ventas o los diez mejores alumnos.
+CUBESET			= CONJUNTOCUBO				##	Define un conjunto calculado de miembros o tuplas mediante el env鱈o de una expresi坦n de conjunto al cubo en el servidor, lo que crea el conjunto y, despu辿s, devuelve dicho conjunto a Microsoft Office Excel.
+CUBESETCOUNT		= RECUENTOCONJUNTOCUBO			##	Devuelve el n炭mero de elementos de un conjunto.
+CUBEVALUE		= VALORCUBO				##	Devuelve un valor agregado de un cubo.
+
+
+##
+##	Database functions					Funciones de base de datos
+##
+DAVERAGE		= BDPROMEDIO				##	Devuelve el promedio de las entradas seleccionadas en la base de datos.
+DCOUNT			= BDCONTAR				##	Cuenta el n炭mero de celdas que contienen n炭meros en una base de datos.
+DCOUNTA			= BDCONTARA				##	Cuenta el n炭mero de celdas no vac鱈as en una base de datos.
+DGET			= BDEXTRAER				##	Extrae de una base de datos un 炭nico registro que cumple los criterios especificados.
+DMAX			= BDMAX					##	Devuelve el valor m叩ximo de las entradas seleccionadas de la base de datos.
+DMIN			= BDMIN					##	Devuelve el valor m鱈nimo de las entradas seleccionadas de la base de datos.
+DPRODUCT		= BDPRODUCTO				##	Multiplica los valores de un campo concreto de registros de una base de datos que cumplen los criterios especificados.
+DSTDEV			= BDDESVEST				##	Calcula la desviaci坦n est叩ndar a partir de una muestra de entradas seleccionadas en la base de datos.
+DSTDEVP			= BDDESVESTP				##	Calcula la desviaci坦n est叩ndar en funci坦n de la poblaci坦n total de las entradas seleccionadas de la base de datos.
+DSUM			= BDSUMA				##	Suma los n炭meros de la columna de campo de los registros de la base de datos que cumplen los criterios.
+DVAR			= BDVAR					##	Calcula la varianza a partir de una muestra de entradas seleccionadas de la base de datos.
+DVARP			= BDVARP				##	Calcula la varianza a partir de la poblaci坦n total de entradas seleccionadas de la base de datos.
+
+
+##
+##	Date and time functions					Funciones de fecha y hora
+##
+DATE			= FECHA					##	Devuelve el n炭mero de serie correspondiente a una fecha determinada.
+DATEVALUE		= FECHANUMERO				##	Convierte una fecha con formato de texto en un valor de n炭mero de serie.
+DAY			= DIA					##	Convierte un n炭mero de serie en un valor de d鱈a del mes.
+DAYS360			= DIAS360				##	Calcula el n炭mero de d鱈as entre dos fechas a partir de un a単o de 360 d鱈as.
+EDATE			= FECHA.MES				##	Devuelve el n炭mero de serie de la fecha equivalente al n炭mero indicado de meses anteriores o posteriores a la fecha inicial.
+EOMONTH			= FIN.MES				##	Devuelve el n炭mero de serie correspondiente al 炭ltimo d鱈a del mes anterior o posterior a un n炭mero de meses especificado.
+HOUR			= HORA					##	Convierte un n炭mero de serie en un valor de hora.
+MINUTE			= MINUTO				##	Convierte un n炭mero de serie en un valor de minuto.
+MONTH			= MES					##	Convierte un n炭mero de serie en un valor de mes.
+NETWORKDAYS		= DIAS.LAB				##	Devuelve el n炭mero de todos los d鱈as laborables existentes entre dos fechas.
+NOW			= AHORA					##	Devuelve el n炭mero de serie correspondiente a la fecha y hora actuales.
+SECOND			= SEGUNDO				##	Convierte un n炭mero de serie en un valor de segundo.
+TIME			= HORA					##	Devuelve el n炭mero de serie correspondiente a una hora determinada.
+TIMEVALUE		= HORANUMERO				##	Convierte una hora con formato de texto en un valor de n炭mero de serie.
+TODAY			= HOY					##	Devuelve el n炭mero de serie correspondiente al d鱈a actual.
+WEEKDAY			= DIASEM				##	Convierte un n炭mero de serie en un valor de d鱈a de la semana.
+WEEKNUM			= NUM.DE.SEMANA				##	Convierte un n炭mero de serie en un n炭mero que representa el lugar num辿rico correspondiente a una semana de un a単o.
+WORKDAY			= DIA.LAB				##	Devuelve el n炭mero de serie de la fecha que tiene lugar antes o despu辿s de un n炭mero determinado de d鱈as laborables.
+YEAR			= Aテ前					##	Convierte un nテコmero de serie en un valor de aテアo.
+YEARFRAC		= FRAC.Aテ前				##	Devuelve la fracciテウn de aテアo que representa el nテコmero total de dテュas existentes entre el valor de fecha_inicial y el de fecha_final.
+
+
+##
+##	Engineering functions					Funciones de ingenierテュa
+##
+BESSELI			= BESSELI				##	Devuelve la funciテウn Bessel In(x) modificada.
+BESSELJ			= BESSELJ				##	Devuelve la funciテウn Bessel Jn(x).
+BESSELK			= BESSELK				##	Devuelve la funciテウn Bessel Kn(x) modificada.
+BESSELY			= BESSELY				##	Devuelve la funciテウn Bessel Yn(x).
+BIN2DEC			= BIN.A.DEC				##	Convierte un nテコmero binario en decimal.
+BIN2HEX			= BIN.A.HEX				##	Convierte un nテコmero binario en hexadecimal.
+BIN2OCT			= BIN.A.OCT				##	Convierte un nテコmero binario en octal.
+COMPLEX			= COMPLEJO				##	Convierte coeficientes reales e imaginarios en un nテコmero complejo.
+CONVERT			= CONVERTIR				##	Convierte un nテコmero de un sistema de medida a otro.
+DEC2BIN			= DEC.A.BIN				##	Convierte un nテコmero decimal en binario.
+DEC2HEX			= DEC.A.HEX				##	Convierte un nテコmero decimal en hexadecimal.
+DEC2OCT			= DEC.A.OCT				##	Convierte un nテコmero decimal en octal.
+DELTA			= DELTA					##	Comprueba si dos valores son iguales.
+ERF			= FUN.ERROR				##	Devuelve la funciテウn de error.
+ERFC			= FUN.ERROR.COMPL			##	Devuelve la funciテウn de error complementario.
+GESTEP			= MAYOR.O.IGUAL				##	Comprueba si un nテコmero es mayor que un valor de umbral.
+HEX2BIN			= HEX.A.BIN				##	Convierte un nテコmero hexadecimal en binario.
+HEX2DEC			= HEX.A.DEC				##	Convierte un nテコmero hexadecimal en decimal.
+HEX2OCT			= HEX.A.OCT				##	Convierte un nテコmero hexadecimal en octal.
+IMABS			= IM.ABS				##	Devuelve el valor absoluto (mテウdulo) de un nテコmero complejo.
+IMAGINARY		= IMAGINARIO				##	Devuelve el coeficiente imaginario de un nテコmero complejo.
+IMARGUMENT		= IM.ANGULO				##	Devuelve el argumento theta, un テ。ngulo expresado en radianes.
+IMCONJUGATE		= IM.CONJUGADA				##	Devuelve la conjugada compleja de un nテコmero complejo.
+IMCOS			= IM.COS				##	Devuelve el coseno de un nテコmero complejo.
+IMDIV			= IM.DIV				##	Devuelve el cociente de dos nテコmeros complejos.
+IMEXP			= IM.EXP				##	Devuelve el valor exponencial de un nテコmero complejo.
+IMLN			= IM.LN					##	Devuelve el logaritmo natural (neperiano) de un nテコmero complejo.
+IMLOG10			= IM.LOG10				##	Devuelve el logaritmo en base 10 de un nテコmero complejo.
+IMLOG2			= IM.LOG2				##	Devuelve el logaritmo en base 2 de un nテコmero complejo.
+IMPOWER			= IM.POT				##	Devuelve un nテコmero complejo elevado a una potencia entera.
+IMPRODUCT		= IM.PRODUCT				##	Devuelve el producto de nテコmeros complejos.
+IMREAL			= IM.REAL				##	Devuelve el coeficiente real de un nテコmero complejo.
+IMSIN			= IM.SENO				##	Devuelve el seno de un nテコmero complejo.
+IMSQRT			= IM.RAIZ2				##	Devuelve la raテュz cuadrada de un nテコmero complejo.
+IMSUB			= IM.SUSTR				##	Devuelve la diferencia entre dos nテコmeros complejos.
+IMSUM			= IM.SUM				##	Devuelve la suma de nテコmeros complejos.
+OCT2BIN			= OCT.A.BIN				##	Convierte un nテコmero octal en binario.
+OCT2DEC			= OCT.A.DEC				##	Convierte un nテコmero octal en decimal.
+OCT2HEX			= OCT.A.HEX				##	Convierte un nテコmero octal en hexadecimal.
+
+
+##
+##	Financial functions					Funciones financieras
+##
+ACCRINT			= INT.ACUM				##	Devuelve el interテゥs acumulado de un valor bursテ。til con pagos de interテゥs periテウdicos.
+ACCRINTM		= INT.ACUM.V				##	Devuelve el interテゥs acumulado de un valor bursテ。til con pagos de interテゥs al vencimiento.
+AMORDEGRC		= AMORTIZ.PROGRE			##	Devuelve la amortizaciテウn de cada perテュodo contable mediante el uso de un coeficiente de amortizaciテウn.
+AMORLINC		= AMORTIZ.LIN				##	Devuelve la amortizaciテウn de cada uno de los perテュodos contables.
+COUPDAYBS		= CUPON.DIAS.L1				##	Devuelve el nテコmero de dテュas desde el principio del perテュodo de un cupテウn hasta la fecha de liquidaciテウn.
+COUPDAYS		= CUPON.DIAS				##	Devuelve el nテコmero de dテュas del perテュodo (entre dos cupones) donde se encuentra la fecha de liquidaciテウn.
+COUPDAYSNC		= CUPON.DIAS.L2				##	Devuelve el nテコmero de dテュas desde la fecha de liquidaciテウn hasta la fecha del prテウximo cupテウn.
+COUPNCD			= CUPON.FECHA.L2			##	Devuelve la fecha del prテウximo cupテウn despuテゥs de la fecha de liquidaciテウn.
+COUPNUM			= CUPON.NUM				##	Devuelve el nテコmero de pagos de cupテウn entre la fecha de liquidaciテウn y la fecha de vencimiento.
+COUPPCD			= CUPON.FECHA.L1			##	Devuelve la fecha de cupテウn anterior a la fecha de liquidaciテウn.
+CUMIPMT			= PAGO.INT.ENTRE			##	Devuelve el interテゥs acumulado pagado entre dos perテュodos.
+CUMPRINC		= PAGO.PRINC.ENTRE			##	Devuelve el capital acumulado pagado de un prテゥstamo entre dos perテュodos.
+DB			= DB					##	Devuelve la amortizaciテウn de un bien durante un perテュodo especテュfico a travテゥs del mテゥtodo de amortizaciテウn de saldo fijo.
+DDB			= DDB					##	Devuelve la amortizaciテウn de un bien durante un perテュodo especテュfico a travテゥs del mテゥtodo de amortizaciテウn por doble disminuciテウn de saldo u otro mテゥtodo que se especifique.
+DISC			= TASA.DESC				##	Devuelve la tasa de descuento de un valor bursテ。til.
+DOLLARDE		= MONEDA.DEC				##	Convierte una cotizaciテウn de un valor bursテ。til expresada en forma fraccionaria en una cotizaciテウn de un valor bursテ。til expresada en forma decimal.
+DOLLARFR		= MONEDA.FRAC				##	Convierte una cotizaciテウn de un valor bursテ。til expresada en forma decimal en una cotizaciテウn de un valor bursテ。til expresada en forma fraccionaria.
+DURATION		= DURACION				##	Devuelve la duraciテウn anual de un valor bursテ。til con pagos de interテゥs periテウdico.
+EFFECT			= INT.EFECTIVO				##	Devuelve la tasa de interテゥs anual efectiva.
+FV			= VF					##	Devuelve el valor futuro de una inversiテウn.
+FVSCHEDULE		= VF.PLAN				##	Devuelve el valor futuro de un capital inicial despuテゥs de aplicar una serie de tasas de interテゥs compuesto.
+INTRATE			= TASA.INT				##	Devuelve la tasa de interテゥs para la inversiテウn total de un valor bursテ。til.
+IPMT			= PAGOINT				##	Devuelve el pago de intereses de una inversiテウn durante un perテュodo determinado.
+IRR			= TIR					##	Devuelve la tasa interna de retorno para una serie de flujos de efectivo periテウdicos.
+ISPMT			= INT.PAGO.DIR				##	Calcula el interテゥs pagado durante un perテュodo especテュfico de una inversiテウn.
+MDURATION		= DURACION.MODIF			##	Devuelve la duraciテウn de Macauley modificada de un valor bursテ。til con un valor nominal supuesto de 100 $.
+MIRR			= TIRM					##	Devuelve la tasa interna de retorno donde se financian flujos de efectivo positivos y negativos a tasas diferentes.
+NOMINAL			= TASA.NOMINAL				##	Devuelve la tasa nominal de interテゥs anual.
+NPER			= NPER					##	Devuelve el nテコmero de perテュodos de una inversiテウn.
+NPV			= VNA					##	Devuelve el valor neto actual de una inversiテウn en funciテウn de una serie de flujos periテウdicos de efectivo y una tasa de descuento.
+ODDFPRICE		= PRECIO.PER.IRREGULAR.1		##	Devuelve el precio por un valor nominal de 100 $ de un valor bursテ。til con un primer perテュodo impar.
+ODDFYIELD		= RENDTO.PER.IRREGULAR.1		##	Devuelve el rendimiento de un valor bursテ。til con un primer perテュodo impar.
+ODDLPRICE		= PRECIO.PER.IRREGULAR.2		##	Devuelve el precio por un valor nominal de 100 $ de un valor bursテ。til con un テコltimo perテュodo impar.
+ODDLYIELD		= RENDTO.PER.IRREGULAR.2		##	Devuelve el rendimiento de un valor bursテ。til con un テコltimo perテュodo impar.
+PMT			= PAGO					##	Devuelve el pago periテウdico de una anualidad.
+PPMT			= PAGOPRIN				##	Devuelve el pago de capital de una inversiテウn durante un perテュodo determinado.
+PRICE			= PRECIO				##	Devuelve el precio por un valor nominal de 100 $ de un valor bursテ。til que paga una tasa de interテゥs periテウdico.
+PRICEDISC		= PRECIO.DESCUENTO			##	Devuelve el precio por un valor nominal de 100 $ de un valor bursテ。til con descuento.
+PRICEMAT		= PRECIO.VENCIMIENTO			##	Devuelve el precio por un valor nominal de 100 $ de un valor bursテ。til que paga interテゥs a su vencimiento.
+PV			= VALACT				##	Devuelve el valor actual de una inversiテウn.
+RATE			= TASA					##	Devuelve la tasa de interテゥs por perテュodo de una anualidad.
+RECEIVED		= CANTIDAD.RECIBIDA			##	Devuelve la cantidad recibida al vencimiento de un valor bursテ。til completamente invertido.
+SLN			= SLN					##	Devuelve la amortizaciテウn por mテゥtodo directo de un bien en un perテュodo dado.
+SYD			= SYD					##	Devuelve la amortizaciテウn por suma de dテュgitos de los aテアos de un bien durante un perテュodo especificado.
+TBILLEQ			= LETRA.DE.TES.EQV.A.BONO		##	Devuelve el rendimiento de un bono equivalente a una letra del Tesoro (de EE.UU.)
+TBILLPRICE		= LETRA.DE.TES.PRECIO			##	Devuelve el precio por un valor nominal de 100 $ de una letra del Tesoro (de EE.UU.)
+TBILLYIELD		= LETRA.DE.TES.RENDTO			##	Devuelve el rendimiento de una letra del Tesoro (de EE.UU.)
+VDB			= DVS					##	Devuelve la amortizaciテウn de un bien durante un perテュodo especテュfico o parcial a travテゥs del mテゥtodo de cテ。lculo del saldo en disminuciテウn.
+XIRR			= TIR.NO.PER				##	Devuelve la tasa interna de retorno para un flujo de efectivo que no es necesariamente periテウdico.
+XNPV			= VNA.NO.PER				##	Devuelve el valor neto actual para un flujo de efectivo que no es necesariamente periテウdico.
+YIELD			= RENDTO				##	Devuelve el rendimiento de un valor bursテ。til que paga intereses periテウdicos.
+YIELDDISC		= RENDTO.DESC				##	Devuelve el rendimiento anual de un valor bursテ。til con descuento; por ejemplo, una letra del Tesoro (de EE.UU.)
+YIELDMAT		= RENDTO.VENCTO				##	Devuelve el rendimiento anual de un valor bursテ。til que paga intereses al vencimiento.
+
+
+##
+##	Information functions					Funciones de informaciテウn
+##
+CELL			= CELDA					##	Devuelve informaciテウn acerca del formato, la ubicaciテウn o el contenido de una celda.
+ERROR.TYPE		= TIPO.DE.ERROR				##	Devuelve un nテコmero que corresponde a un tipo de error.
+INFO			= INFO					##	Devuelve informaciテウn acerca del entorno operativo en uso.
+ISBLANK			= ESBLANCO				##	Devuelve VERDADERO si el valor estテ。 en blanco.
+ISERR			= ESERR					##	Devuelve VERDADERO si el valor es cualquier valor de error excepto #N/A.
+ISERROR			= ESERROR				##	Devuelve VERDADERO si el valor es cualquier valor de error.
+ISEVEN			= ES.PAR				##	Devuelve VERDADERO si el nテコmero es par.
+ISLOGICAL		= ESLOGICO				##	Devuelve VERDADERO si el valor es un valor lテウgico.
+ISNA			= ESNOD					##	Devuelve VERDADERO si el valor es el valor de error #N/A.
+ISNONTEXT		= ESNOTEXTO				##	Devuelve VERDADERO si el valor no es texto.
+ISNUMBER		= ESNUMERO				##	Devuelve VERDADERO si el valor es un nテコmero.
+ISODD			= ES.IMPAR				##	Devuelve VERDADERO si el nテコmero es impar.
+ISREF			= ESREF					##	Devuelve VERDADERO si el valor es una referencia.
+ISTEXT			= ESTEXTO				##	Devuelve VERDADERO si el valor es texto.
+N			= N					##	Devuelve un valor convertido en un nテコmero.
+NA			= ND					##	Devuelve el valor de error #N/A.
+TYPE			= TIPO					##	Devuelve un nテコmero que indica el tipo de datos de un valor.
+
+
+##
+##	Logical functions					Funciones lテウgicas
+##
+AND			= Y					##	Devuelve VERDADERO si todos sus argumentos son VERDADERO.
+FALSE			= FALSO					##	Devuelve el valor lテウgico FALSO.
+IF			= SI					##	Especifica una prueba lテウgica que realizar.
+IFERROR			= SI.ERROR				##	Devuelve un valor que se especifica si una fテウrmula lo evalテコa como un error; de lo contrario, devuelve el resultado de la fテウrmula.
+NOT			= NO					##	Invierte el valor lテウgico del argumento.
+OR			= O					##	Devuelve VERDADERO si cualquier argumento es VERDADERO.
+TRUE			= VERDADERO				##	Devuelve el valor lテウgico VERDADERO.
+
+
+##
+##	Lookup and reference functions				Funciones de bテコsqueda y referencia
+##
+ADDRESS			= DIRECCION				##	Devuelve una referencia como texto a una sola celda de una hoja de cテ。lculo.
+AREAS			= AREAS					##	Devuelve el nテコmero de テ。reas de una referencia.
+CHOOSE			= ELEGIR				##	Elige un valor de una lista de valores.
+COLUMN			= COLUMNA				##	Devuelve el nテコmero de columna de una referencia.
+COLUMNS			= COLUMNAS				##	Devuelve el nテコmero de columnas de una referencia.
+HLOOKUP			= BUSCARH				##	Busca en la fila superior de una matriz y devuelve el valor de la celda indicada.
+HYPERLINK		= HIPERVINCULO				##	Crea un acceso directo o un salto que abre un documento almacenado en un servidor de red, en una intranet o en Internet.
+INDEX			= INDICE				##	Usa un テュndice para elegir un valor de una referencia o matriz.
+INDIRECT		= INDIRECTO				##	Devuelve una referencia indicada por un valor de texto.
+LOOKUP			= BUSCAR				##	Busca valores de un vector o una matriz.
+MATCH			= COINCIDIR				##	Busca valores de una referencia o matriz.
+OFFSET			= DESREF				##	Devuelve un desplazamiento de referencia respecto a una referencia dada.
+ROW			= FILA					##	Devuelve el nテコmero de fila de una referencia.
+ROWS			= FILAS					##	Devuelve el nテコmero de filas de una referencia.
+RTD			= RDTR					##	Recupera datos en tiempo real desde un programa compatible con la automatizaciテウn COM (automatizaciテウn: modo de trabajar con los objetos de una aplicaciテウn desde otra aplicaciテウn o herramienta de entorno. La automatizaciテウn, antes denominada automatizaciテウn OLE, es un estテ。ndar de la industria y una funciテウn del Modelo de objetos componentes (COM).).
+TRANSPOSE		= TRANSPONER				##	Devuelve la transposiciテウn de una matriz.
+VLOOKUP			= BUSCARV				##	Busca en la primera columna de una matriz y se mueve en horizontal por la fila para devolver el valor de una celda.
+
+
+##
+##	Math and trigonometry functions				Funciones matemテ。ticas y trigonomテゥtricas
+##
+ABS			= ABS					##	Devuelve el valor absoluto de un nテコmero.
+ACOS			= ACOS					##	Devuelve el arcocoseno de un nテコmero.
+ACOSH			= ACOSH					##	Devuelve el coseno hiperbテウlico inverso de un nテコmero.
+ASIN			= ASENO					##	Devuelve el arcoseno de un nテコmero.
+ASINH			= ASENOH				##	Devuelve el seno hiperbテウlico inverso de un nテコmero.
+ATAN			= ATAN					##	Devuelve la arcotangente de un nテコmero.
+ATAN2			= ATAN2					##	Devuelve la arcotangente de las coordenadas "x" e "y".
+ATANH			= ATANH					##	Devuelve la tangente hiperbテウlica inversa de un nテコmero.
+CEILING			= MULTIPLO.SUPERIOR			##	Redondea un nテコmero al entero mテ。s prテウximo o al mテコltiplo significativo mテ。s cercano.
+COMBIN			= COMBINAT				##	Devuelve el nテコmero de combinaciones para un nテコmero determinado de objetos.
+COS			= COS					##	Devuelve el coseno de un nテコmero.
+COSH			= COSH					##	Devuelve el coseno hiperbテウlico de un nテコmero.
+DEGREES			= GRADOS				##	Convierte radianes en grados.
+EVEN			= REDONDEA.PAR				##	Redondea un nテコmero hasta el entero par mテ。s prテウximo.
+EXP			= EXP					##	Devuelve e elevado a la potencia de un nテコmero dado.
+FACT			= FACT					##	Devuelve el factorial de un nテコmero.
+FACTDOUBLE		= FACT.DOBLE				##	Devuelve el factorial doble de un nテコmero.
+FLOOR			= MULTIPLO.INFERIOR			##	Redondea un nテコmero hacia abajo, en direcciテウn hacia cero.
+GCD			= M.C.D					##	Devuelve el mテ。ximo comテコn divisor.
+INT			= ENTERO				##	Redondea un nテコmero hacia abajo hasta el entero mテ。s prテウximo.
+LCM			= M.C.M					##	Devuelve el mテュnimo comテコn mテコltiplo.
+LN			= LN					##	Devuelve el logaritmo natural (neperiano) de un nテコmero.
+LOG			= LOG					##	Devuelve el logaritmo de un nテコmero en una base especificada.
+LOG10			= LOG10					##	Devuelve el logaritmo en base 10 de un nテコmero.
+MDETERM			= MDETERM				##	Devuelve la determinante matricial de una matriz.
+MINVERSE		= MINVERSA				##	Devuelve la matriz inversa de una matriz.
+MMULT			= MMULT					##	Devuelve el producto de matriz de dos matrices.
+MOD			= RESIDUO				##	Devuelve el resto de la divisiテウn.
+MROUND			= REDOND.MULT				##	Devuelve un nテコmero redondeado al mテコltiplo deseado.
+MULTINOMIAL		= MULTINOMIAL				##	Devuelve el polinomio de un conjunto de nテコmeros.
+ODD			= REDONDEA.IMPAR			##	Redondea un nテコmero hacia arriba hasta el entero impar mテ。s prテウximo.
+PI			= PI					##	Devuelve el valor de pi.
+POWER			= POTENCIA				##	Devuelve el resultado de elevar un nテコmero a una potencia.
+PRODUCT			= PRODUCTO				##	Multiplica sus argumentos.
+QUOTIENT		= COCIENTE				##	Devuelve la parte entera de una divisiテウn.
+RADIANS			= RADIANES				##	Convierte grados en radianes.
+RAND			= ALEATORIO				##	Devuelve un nテコmero aleatorio entre 0 y 1.
+RANDBETWEEN		= ALEATORIO.ENTRE			##	Devuelve un nテコmero aleatorio entre los nテコmeros que especifique.
+ROMAN			= NUMERO.ROMANO				##	Convierte un nテコmero arテ。bigo en nテコmero romano, con formato de texto.
+ROUND			= REDONDEAR				##	Redondea un nテコmero al nテコmero de decimales especificado.
+ROUNDDOWN		= REDONDEAR.MENOS			##	Redondea un nテコmero hacia abajo, en direcciテウn hacia cero.
+ROUNDUP			= REDONDEAR.MAS				##	Redondea un nテコmero hacia arriba, en direcciテウn contraria a cero.
+SERIESSUM		= SUMA.SERIES				##	Devuelve la suma de una serie de potencias en funciテウn de la fテウrmula.
+SIGN			= SIGNO					##	Devuelve el signo de un nテコmero.
+SIN			= SENO					##	Devuelve el seno de un テ。ngulo determinado.
+SINH			= SENOH					##	Devuelve el seno hiperbテウlico de un nテコmero.
+SQRT			= RAIZ					##	Devuelve la raテュz cuadrada positiva de un nテコmero.
+SQRTPI			= RAIZ2PI				##	Devuelve la raテュz cuadrada de un nテコmero multiplicado por PI (nテコmero * pi).
+SUBTOTAL		= SUBTOTALES				##	Devuelve un subtotal en una lista o base de datos.
+SUM			= SUMA					##	Suma sus argumentos.
+SUMIF			= SUMAR.SI				##	Suma las celdas especificadas que cumplen unos criterios determinados.
+SUMIFS			= SUMAR.SI.CONJUNTO			##	Suma las celdas de un rango que cumplen varios criterios.
+SUMPRODUCT		= SUMAPRODUCTO				##	Devuelve la suma de los productos de los correspondientes componentes de matriz.
+SUMSQ			= SUMA.CUADRADOS			##	Devuelve la suma de los cuadrados de los argumentos.
+SUMX2MY2		= SUMAX2MENOSY2				##	Devuelve la suma de la diferencia de los cuadrados de los valores correspondientes de dos matrices.
+SUMX2PY2		= SUMAX2MASY2				##	Devuelve la suma de la suma de los cuadrados de los valores correspondientes de dos matrices.
+SUMXMY2			= SUMAXMENOSY2				##	Devuelve la suma de los cuadrados de las diferencias de los valores correspondientes de dos matrices.
+TAN			= TAN					##	Devuelve la tangente de un nテコmero.
+TANH			= TANH					##	Devuelve la tangente hiperbテウlica de un nテコmero.
+TRUNC			= TRUNCAR				##	Trunca un nテコmero a un entero.
+
+
+##
+##	Statistical functions					Funciones estadテュsticas
+##
+AVEDEV			= DESVPROM				##	Devuelve el promedio de las desviaciones absolutas de la media de los puntos de datos.
+AVERAGE			= PROMEDIO				##	Devuelve el promedio de sus argumentos.
+AVERAGEA		= PROMEDIOA				##	Devuelve el promedio de sus argumentos, incluidos nテコmeros, texto y valores lテウgicos.
+AVERAGEIF		= PROMEDIO.SI				##	Devuelve el promedio (media aritmテゥtica) de todas las celdas de un rango que cumplen unos criterios determinados.
+AVERAGEIFS		= PROMEDIO.SI.CONJUNTO			##	Devuelve el promedio (media aritmテゥtica) de todas las celdas que cumplen mテコltiples criterios.
+BETADIST		= DISTR.BETA				##	Devuelve la funciテウn de distribuciテウn beta acumulativa.
+BETAINV			= DISTR.BETA.INV			##	Devuelve la funciテウn inversa de la funciテウn de distribuciテウn acumulativa de una distribuciテウn beta especificada.
+BINOMDIST		= DISTR.BINOM				##	Devuelve la probabilidad de una variable aleatoria discreta siguiendo una distribuciテウn binomial.
+CHIDIST			= DISTR.CHI				##	Devuelve la probabilidad de una variable aleatoria continua siguiendo una distribuciテウn chi cuadrado de una sola cola.
+CHIINV			= PRUEBA.CHI.INV			##	Devuelve la funciテウn inversa de la probabilidad de una variable aleatoria continua siguiendo una distribuciテウn chi cuadrado de una sola cola.
+CHITEST			= PRUEBA.CHI				##	Devuelve la prueba de independencia.
+CONFIDENCE		= INTERVALO.CONFIANZA			##	Devuelve el intervalo de confianza de la media de una poblaciテウn.
+CORREL			= COEF.DE.CORREL			##	Devuelve el coeficiente de correlaciテウn entre dos conjuntos de datos.
+COUNT			= CONTAR				##	Cuenta cuテ。ntos nテコmeros hay en la lista de argumentos.
+COUNTA			= CONTARA				##	Cuenta cuテ。ntos valores hay en la lista de argumentos.
+COUNTBLANK		= CONTAR.BLANCO				##	Cuenta el nテコmero de celdas en blanco de un rango.
+COUNTIF			= CONTAR.SI				##	Cuenta el nテコmero de celdas, dentro del rango, que cumplen el criterio especificado.
+COUNTIFS		= CONTAR.SI.CONJUNTO			##	Cuenta el nテコmero de celdas, dentro del rango, que cumplen varios criterios.
+COVAR			= COVAR					##	Devuelve la covarianza, que es el promedio de los productos de las desviaciones para cada pareja de puntos de datos.
+CRITBINOM		= BINOM.CRIT				##	Devuelve el menor valor cuya distribuciテウn binomial acumulativa es menor o igual a un valor de criterio.
+DEVSQ			= DESVIA2				##	Devuelve la suma de los cuadrados de las desviaciones.
+EXPONDIST		= DISTR.EXP				##	Devuelve la distribuciテウn exponencial.
+FDIST			= DISTR.F				##	Devuelve la distribuciテウn de probabilidad F.
+FINV			= DISTR.F.INV				##	Devuelve la funciテウn inversa de la distribuciテウn de probabilidad F.
+FISHER			= FISHER				##	Devuelve la transformaciテウn Fisher.
+FISHERINV		= PRUEBA.FISHER.INV			##	Devuelve la funciテウn inversa de la transformaciテウn Fisher.
+FORECAST		= PRONOSTICO				##	Devuelve un valor en una tendencia lineal.
+FREQUENCY		= FRECUENCIA				##	Devuelve una distribuciテウn de frecuencia como una matriz vertical.
+FTEST			= PRUEBA.F				##	Devuelve el resultado de una prueba F.
+GAMMADIST		= DISTR.GAMMA				##	Devuelve la distribuciテウn gamma.
+GAMMAINV		= DISTR.GAMMA.INV			##	Devuelve la funciテウn inversa de la distribuciテウn gamma acumulativa.
+GAMMALN			= GAMMA.LN				##	Devuelve el logaritmo natural de la funciテウn gamma, G(x).
+GEOMEAN			= MEDIA.GEOM				##	Devuelve la media geomテゥtrica.
+GROWTH			= CRECIMIENTO				##	Devuelve valores en una tendencia exponencial.
+HARMEAN			= MEDIA.ARMO				##	Devuelve la media armテウnica.
+HYPGEOMDIST		= DISTR.HIPERGEOM			##	Devuelve la distribuciテウn hipergeomテゥtrica.
+INTERCEPT		= INTERSECCION.EJE			##	Devuelve la intersecciテウn de la lテュnea de regresiテウn lineal.
+KURT			= CURTOSIS				##	Devuelve la curtosis de un conjunto de datos.
+LARGE			= K.ESIMO.MAYOR				##	Devuelve el k-テゥsimo mayor valor de un conjunto de datos.
+LINEST			= ESTIMACION.LINEAL			##	Devuelve los parテ。metros de una tendencia lineal.
+LOGEST			= ESTIMACION.LOGARITMICA		##	Devuelve los parテ。metros de una tendencia exponencial.
+LOGINV			= DISTR.LOG.INV				##	Devuelve la funciテウn inversa de la distribuciテウn logarテュtmico-normal.
+LOGNORMDIST		= DISTR.LOG.NORM			##	Devuelve la distribuciテウn logarテュtmico-normal acumulativa.
+MAX			= MAX					##	Devuelve el valor mテ。ximo de una lista de argumentos.
+MAXA			= MAXA					##	Devuelve el valor mテ。ximo de una lista de argumentos, incluidos nテコmeros, texto y valores lテウgicos.
+MEDIAN			= MEDIANA				##	Devuelve la mediana de los nテコmeros dados.
+MIN			= MIN					##	Devuelve el valor mテュnimo de una lista de argumentos.
+MINA			= MINA					##	Devuelve el valor mテュnimo de una lista de argumentos, incluidos nテコmeros, texto y valores lテウgicos.
+MODE			= MODA					##	Devuelve el valor mテ。s comテコn de un conjunto de datos.
+NEGBINOMDIST		= NEGBINOMDIST				##	Devuelve la distribuciテウn binomial negativa.
+NORMDIST		= DISTR.NORM				##	Devuelve la distribuciテウn normal acumulativa.
+NORMINV			= DISTR.NORM.INV			##	Devuelve la funciテウn inversa de la distribuciテウn normal acumulativa.
+NORMSDIST		= DISTR.NORM.ESTAND			##	Devuelve la distribuciテウn normal estテ。ndar acumulativa.
+NORMSINV		= DISTR.NORM.ESTAND.INV			##	Devuelve la funciテウn inversa de la distribuciテウn normal estテ。ndar acumulativa.
+PEARSON			= PEARSON				##	Devuelve el coeficiente de momento de correlaciテウn de producto Pearson.
+PERCENTILE		= PERCENTIL				##	Devuelve el k-テゥsimo percentil de los valores de un rango.
+PERCENTRANK		= RANGO.PERCENTIL			##	Devuelve el rango porcentual de un valor de un conjunto de datos.
+PERMUT			= PERMUTACIONES				##	Devuelve el nテコmero de permutaciones de un nテコmero determinado de objetos.
+POISSON			= POISSON				##	Devuelve la distribuciテウn de Poisson.
+PROB			= PROBABILIDAD				##	Devuelve la probabilidad de que los valores de un rango se encuentren entre dos lテュmites.
+QUARTILE		= CUARTIL				##	Devuelve el cuartil de un conjunto de datos.
+RANK			= JERARQUIA				##	Devuelve la jerarquテュa de un nテコmero en una lista de nテコmeros.
+RSQ			= COEFICIENTE.R2			##	Devuelve el cuadrado del coeficiente de momento de correlaciテウn de producto Pearson.
+SKEW			= COEFICIENTE.ASIMETRIA			##	Devuelve la asimetrテュa de una distribuciテウn.
+SLOPE			= PENDIENTE				##	Devuelve la pendiente de la lテュnea de regresiテウn lineal.
+SMALL			= K.ESIMO.MENOR				##	Devuelve el k-テゥsimo menor valor de un conjunto de datos.
+STANDARDIZE		= NORMALIZACION				##	Devuelve un valor normalizado.
+STDEV			= DESVEST				##	Calcula la desviaciテウn estテ。ndar a partir de una muestra.
+STDEVA			= DESVESTA				##	Calcula la desviaciテウn estテ。ndar a partir de una muestra, incluidos nテコmeros, texto y valores lテウgicos.
+STDEVP			= DESVESTP				##	Calcula la desviaciテウn estテ。ndar en funciテウn de toda la poblaciテウn.
+STDEVPA			= DESVESTPA				##	Calcula la desviaciテウn estテ。ndar en funciテウn de toda la poblaciテウn, incluidos nテコmeros, texto y valores lテウgicos.
+STEYX			= ERROR.TIPICO.XY			##	Devuelve el error estテ。ndar del valor de "y" previsto para cada "x" de la regresiテウn.
+TDIST			= DISTR.T				##	Devuelve la distribuciテウn de t de Student.
+TINV			= DISTR.T.INV				##	Devuelve la funciテウn inversa de la distribuciテウn de t de Student.
+TREND			= TENDENCIA				##	Devuelve valores en una tendencia lineal.
+TRIMMEAN		= MEDIA.ACOTADA				##	Devuelve la media del interior de un conjunto de datos.
+TTEST			= PRUEBA.T				##	Devuelve la probabilidad asociada a una prueba t de Student.
+VAR			= VAR					##	Calcula la varianza en funciテウn de una muestra.
+VARA			= VARA					##	Calcula la varianza en funciテウn de una muestra, incluidos nテコmeros, texto y valores lテウgicos.
+VARP			= VARP					##	Calcula la varianza en funciテウn de toda la poblaciテウn.
+VARPA			= VARPA					##	Calcula la varianza en funciテウn de toda la poblaciテウn, incluidos nテコmeros, texto y valores lテウgicos.
+WEIBULL			= DIST.WEIBULL				##	Devuelve la distribuciテウn de Weibull.
+ZTEST			= PRUEBA.Z				##	Devuelve el valor de una probabilidad de una cola de una prueba z.
+
+
+##
+##	Text functions						Funciones de texto
+##
+ASC			= ASC					##	Convierte las letras inglesas o katakana de ancho completo (de dos bytes) dentro de una cadena de caracteres en caracteres de ancho medio (de un byte).
+BAHTTEXT		= TEXTOBAHT				##	Convierte un nテコmero en texto, con el formato de moneda テ(Baht).
+CHAR			= CARACTER				##	Devuelve el car叩cter especificado por el n炭mero de c坦digo.
+CLEAN			= LIMPIAR				##	Quita del texto todos los caracteres no imprimibles.
+CODE			= CODIGO				##	Devuelve un c坦digo num辿rico del primer car叩cter de una cadena de texto.
+CONCATENATE		= CONCATENAR				##	Concatena varios elementos de texto en uno solo.
+DOLLAR			= MONEDA				##	Convierte un n炭mero en texto, con el formato de moneda $ (d坦lar).
+EXACT			= IGUAL					##	Comprueba si dos valores de texto son id辿nticos.
+FIND			= ENCONTRAR				##	Busca un valor de texto dentro de otro (distingue may炭sculas de min炭sculas).
+FINDB			= ENCONTRARB				##	Busca un valor de texto dentro de otro (distingue may炭sculas de min炭sculas).
+FIXED			= DECIMAL				##	Da formato a un n炭mero como texto con un n炭mero fijo de decimales.
+JIS			= JIS					##	Convierte las letras inglesas o katakana de ancho medio (de un byte) dentro de una cadena de caracteres en caracteres de ancho completo (de dos bytes).
+LEFT			= IZQUIERDA				##	Devuelve los caracteres del lado izquierdo de un valor de texto.
+LEFTB			= IZQUIERDAB				##	Devuelve los caracteres del lado izquierdo de un valor de texto.
+LEN			= LARGO					##	Devuelve el n炭mero de caracteres de una cadena de texto.
+LENB			= LARGOB				##	Devuelve el n炭mero de caracteres de una cadena de texto.
+LOWER			= MINUSC				##	Pone el texto en min炭sculas.
+MID			= EXTRAE				##	Devuelve un n炭mero espec鱈fico de caracteres de una cadena de texto que comienza en la posici坦n que se especifique.
+MIDB			= EXTRAEB				##	Devuelve un n炭mero espec鱈fico de caracteres de una cadena de texto que comienza en la posici坦n que se especifique.
+PHONETIC		= FONETICO				##	Extrae los caracteres fon辿ticos (furigana) de una cadena de texto.
+PROPER			= NOMPROPIO				##	Pone en may炭scula la primera letra de cada palabra de un valor de texto.
+REPLACE			= REEMPLAZAR				##	Reemplaza caracteres de texto.
+REPLACEB		= REEMPLAZARB				##	Reemplaza caracteres de texto.
+REPT			= REPETIR				##	Repite el texto un n炭mero determinado de veces.
+RIGHT			= DERECHA				##	Devuelve los caracteres del lado derecho de un valor de texto.
+RIGHTB			= DERECHAB				##	Devuelve los caracteres del lado derecho de un valor de texto.
+SEARCH			= HALLAR				##	Busca un valor de texto dentro de otro (no distingue may炭sculas de min炭sculas).
+SEARCHB			= HALLARB				##	Busca un valor de texto dentro de otro (no distingue may炭sculas de min炭sculas).
+SUBSTITUTE		= SUSTITUIR				##	Sustituye texto nuevo por texto antiguo en una cadena de texto.
+T			= T					##	Convierte sus argumentos a texto.
+TEXT			= TEXTO					##	Da formato a un n炭mero y lo convierte en texto.
+TRIM			= ESPACIOS				##	Quita los espacios del texto.
+UPPER			= MAYUSC				##	Pone el texto en may炭sculas.
+VALUE			= VALOR					##	Convierte un argumento de texto en un n炭mero.

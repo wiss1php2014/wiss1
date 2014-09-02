@@ -1,13 +1,16 @@
 <?php
 App::import('Model','TLoginData');
 
-class MenuController extends Controller {
+class MenuController extends AppController {
 
 	/**
 	 * 初期表示アクション
 	 */
 	public function index(){
 		//何もない場合は wiss1/app/View/[コントローラ名]/[アクションメソッド名].ctpに遷移
+		//$empNo = $this->Session->read(SESSION_KEY);
+// 		$empNo = $this->_getSessionEmpNo();
+// 		$this->set('xxx',$empNo);
 	}
 
 	/**
@@ -32,13 +35,6 @@ class MenuController extends Controller {
 	public function career() {
 		// 画面に渡す変数をセット
 		$this->set('message','経歴書確認画面に遷移');
-	}
-
-	/**
-	 * ログアウトアクション
-	 */
-	public function back(){
-		$this->redirect('/login');
 	}
 
 }

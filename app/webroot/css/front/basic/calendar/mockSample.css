@@ -1,0 +1,31 @@
+.date-sunday   .ui-state-default {
+  background-image: none; background-color: #FF9999
+}
+.date-saturday .ui-state-default {
+  background-image: none; background-color: #66CCFF
+}
+.date-holiday0 .ui-state-default {
+  background-image: none; background-color: #FF99FF
+}
+.date-holiday1 .ui-state-default {
+  background-image: none; background-color: #FFFF33
+}
+}
+
+/* 透明度の設定 */
+#holidayCalendar .ui-datepicker-unselectable {
+	opacity: 1.0;
+	filter: alpha(opacity = 100); /* ie lt 8 */
+	-ms-filter: "alpha(opacity=100)"; /* ie 8 */
+}
+
+/* カレンダーの見た目 */
+#holidayCalendar {
+	font-size: 60%;
+	margin: 5px 5px 5px 20px;
+}
+
+/* 非表示項目 */
+.calendarData {
+	display: none;
+}

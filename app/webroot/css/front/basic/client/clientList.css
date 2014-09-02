@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.inputC {
+	float: left;
+	padding-top: 5px;
+}
+
+.inputSearchClientL {
+	width: 58px;
+	float: left;
+	padding-right: 8px;
+}
+
+.inputSearchClientR {
+	width: 128px;
+	float: left;
+	padding-left: 8px;
+}
+
+.inputDtFrom {
+	width: 120px;
+	float: left;
+	padding-right: 8px;
+}
+
+.inputDtTo {
+	width: 120px;
+	float: left;
+	padding-left: 8px;
+}

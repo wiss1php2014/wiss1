@@ -1,0 +1,3 @@
+$(function() {
+	$("#descriptionDetailTab").tabs();
+});

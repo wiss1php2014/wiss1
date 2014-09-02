@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.inputL {
+	width: 110px;
+	float: left;
+}
+
+.inputC {
+	padding-top: 5px;
+	float: left;
+}
+
+.inputR {
+	padding-left: 10px;
+	float: left;
+}
+
+.checkbox {
+	padding-top: 10px;
+	vertical-align: middle;
+ }

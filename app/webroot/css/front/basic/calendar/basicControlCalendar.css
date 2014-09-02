@@ -1,0 +1,29 @@
+/* 全日休業の背景を変える */
+.ui-datepicker-holiday .ui-state-default {
+	background-image: none;
+	background-color: #ff0033;
+}
+
+/* 半日営業の背景を変える */
+.ui-datepicker-halfday .ui-state-default {
+	background-image: none;
+	background-color: #00ccff;
+}
+
+/* 透明度の設定 */
+#holidayCalendar .ui-datepicker-unselectable {
+	opacity: 1.0;
+	filter: alpha(opacity = 100); /* ie lt 8 */
+	-ms-filter: "alpha(opacity=100)"; /* ie 8 */
+}
+
+/* カレンダーの見た目 */
+#holidayCalendar {
+	font-size: 60%;
+	margin: 5px 5px 5px 20px;
+}
+
+/* 非表示項目 */
+.calendarData {
+	display: none;
+}
