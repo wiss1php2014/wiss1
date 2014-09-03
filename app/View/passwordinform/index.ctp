@@ -21,7 +21,7 @@
 <body>
 <div class="container">
 <h1 class="text-center">パスワード通知</h1>
-<form name="passwordinform" class="form-signin" action="/passwordinform/send" method="post">
+<form action="/passwordinform/send" method="post">
 	<h5 class="form-signin-heading">メールアドレスを入力してください。</h5>
 	<h5 class="form-signin-heading">パスワードが記載されたメールを送信します。</h5>
 

@@ -15,7 +15,7 @@
 	<![endif]-->
 </head>
 <body>
-<form name="myprofilesearch" class="form-myprofile" action="/myProfile/search" method="post">
+<form action="/myProfile/search" method="post">
 <div class="navbar navbar-inverse" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
@@ -35,8 +35,6 @@
 	<div class="row">
 		<div class="col-md-6">
 			<h3>MyProfile検索</h3>
-			</div>
-		<div class="col-md-6">
 		</div>
 	</div>
 

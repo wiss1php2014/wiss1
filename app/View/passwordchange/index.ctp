@@ -15,7 +15,7 @@
 	<![endif]-->
 </head>
 <body>
-<form name="passwordchange" class="form-signin" action="/passwordchange/update" method="post">
+<form action="/passwordchange/update" method="post">
 <div class="navbar navbar-inverse" role="navigation">
 	<div class="container">
 		<div class="navbar-header">

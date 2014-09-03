@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<form name="passwordchange" class="form-signin" action="/careeroutput/download" method="post">
+<form action="/careeroutput/download" method="post">
 <div class="navbar navbar-inverse" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
@@ -27,7 +27,7 @@
 			<ul class="nav navbar-nav">
 				<li><a href="/menu/"><span class="glyphicon glyphicon-home"></span> ホーム</a></li>
 				<li><a href="/passwordchange/"><span class="glyphicon glyphicon-cog"></span> パスワード変更</a></li>
-				<li><a href="/menu/back"><span class="glyphicon glyphicon-share"></span> ログアウト</a></li>
+				<li><a href="/logout"><span class="glyphicon glyphicon-share"></span> ログアウト</a></li>
 			</ul>
 		</div>
 	</div>
@@ -36,7 +36,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 buttonArea">
-			<input type="submit" class="btn btn-primary search_btn" value="Excel出力"/>
+			<input type="submit" class="btn btn-primary search_btn" value="経歴書出力"/>
 		</div>
 	</div>
 </div>

@@ -2,114 +2,140 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<title>ログインデータ管理</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>My Wiss1</title>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="../js/jquery-2.1.1.js"></script>
+	<script language="Javascript">
+	$().ready(function() {
+
+		// 行クリック時
+		$("#loginDataList tr").click(function() {
+
+			// クリック行を保持
+			var recordIndex = $("#loginDataList tr").index($(this));
+			if (recordIndex < 0) return;
+
+			// 背景色初期化
+			$("#loginDataList tr").each(function(){
+				$(this).css("background-color", '#FFFFFF');
+			});
+
+			// 社員番号をhiddenに設定
+			var empNo = $(this).find("td").eq(1).text();
+			$("[name='hidden_upd_no']").val(empNo);
+			$("[name='hidden_del_no']").val(empNo);
+
+			// 背景色設定
+			$(this).css("background-color", '#DFF0D8');
+		});
+
+	});
+	</script>
 </head>
+<body>
+<div class="navbar navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="/menu" class="navbar-brand"><span class="glyphicon glyphicon-user"></span> My Wiss1</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="/menu"><span class="glyphicon glyphicon-home"></span> ホーム</a></li>
+				<li><a href="/passwordchange"><span class="glyphicon glyphicon-cog"></span> パスワード変更</a></li>
+				<li><a href="/logout"><span class="glyphicon glyphicon-share"></span> ログアウト</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-<!-- Javascriptで実装。他の方法がわからんのです。 -->
-<script language="Javascript">
-// ログインデータ一覧クリック時処理
-function Click_Sub(obj) {
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h3>ユーザ一覧</h3>
+			</div>
+	</div>
 
-	// 選択行位置を取得
-	var pos = obj.rowIndex;
-	// 本体部分のコントロールを取得
-	var myTbl = document.getElementById("table_main");
+	<div class="row">
+		<div class="col-md-12">
+			<div class="table-responsive">
+				<table class="table table-bordered table-hover" id="table_main">
+					<thead>
+						<tr class="success">
+							<th>No.</th>
+							<th>社員番号</th>
+							<th>メールアドレス</th>
+							<th>パスワード</th>
+							<th>権限</th>
+							<th>登録者</th>
+							<th>登録年月日</th>
+							<th>更新者</th>
+							<th>更新年月日</th>
+						</tr>
+					</thead>
+					<tbody id="loginDataList">
+						<?php if ($loginDatas != null && $loginDatas !="none"): ?>
+						<?php $count =1 ;?>
+						<?php foreach ($loginDatas as $loginData): ?>
+							<tr>
+								<td><?php echo $count; ?></td>
+								<td><?php echo $loginData['TLoginData']['emp_no']; ?></td></a>
+								<td><?php echo $loginData['TLoginData']['mail_address']; ?></td></a>
+								<td><?php echo $loginData['TLoginData']['password']; ?></td></a>
+								<td><?php echo $loginData['TLoginData']['authority']; ?></td></a>
+								<td><?php echo $loginData['TLoginData']['create_user']; ?></td></a>
+								<td><?php echo(date('Y年n月j日', strtotime($loginData['TLoginData']['create_date']))); ?></td>
+								<td><?php echo $loginData['TLoginData']['update_user']; ?></td></a>
+								<td><?php echo(date('Y年n月j日', strtotime($loginData['TLoginData']['update_ymd']))); ?></td>
+							</tr>
+						<?php $count++; ?>
+						<?php endforeach; ?>
+						<?php endif; ?>
+					</tbody>
+				</table>
+				<h5>※更新/削除時は対象レコードを選択してください。</h5>
+				<br/>
+			</div>
+		</div>
+	</div>
 
-	// まず、全体の背景色を初期化（白色）する。
-	for (var i=0; i<myTbl.rows.length; i++) {
-		myTbl.rows[i].style.backgroundColor="#FFFFFF";
-	}
+	<div class="row">
+		<div class="col-md-12" align="right">
+			<a href="javascript:document.update_btn.submit()"><input type="button" class="btn btn-primary" value="更新"/></a>
+			<a href="javascript:document.delete_btn.submit()"><input type="button" class="btn btn-primary" value="削除"/></a>
+			<a href="/menu"><input type="button" class="btn btn-primary" value="戻る"/></a>
+		</div>
+	</div>
+</div>
 
-	// 従業員番号を隠し項目に設定
-	// 共通化ができなかったので、各イベント毎に隠し項目を用意
-	document.forms.update_btn.hidden_upd_no.value = myTbl.rows[pos].cells[0].firstChild.data;
-	document.forms.delete_btn.hidden_del_no.value = myTbl.rows[pos].cells[0].firstChild.data;
-
-	// 選択行のみ色を変更する。
-	obj.style.backgroundColor="#cccccc";
-}
-</script>
-
-<table width="1170"; border="1"; cellpadding="2"; cellspacing="0"; >
-<CAPTION>ログインデータ</CAPTION>
-
-<!-- 一覧のヘッダ部を宣言 -->
-<!-- 各項目のサイズは適当です。 -->
-<THEAD>
-	<tr>
-	<th width="100">従業員番号</th>
-	<th width="200">アドレス</th>
-	<th width="150">パスワード</th>
-	<th width="60">権限</th>
-	<th width="150">登録者</th>
-	<th width="150">登録年月日</th>
-	<th width="150">更新者</th>
-	<th width="150">更新年月日</th>
-	<th width="15"></th>　<!-- スクロールバーの領域 -->
-	</tr>
-</THEAD>
-
-<!-- DBの取得結果から一覧の本体部分を作成 -->
-<TBODY>
-	<TR>
-	<TD colspan="9">
-	<DIV style="height:200px; overflow:auto;">
-
-	<!-- スクロールバーを出すため、本体部分は別テーブルとして宣言 -->
-	<!-- 各項目はヘッダ部と同サイズとしています。 -->
-	<table border="1"; cellspacing="0" id="table_main">
-	<colgroup span="1" width="100"></colgroup>
-	<colgroup span="1" width="200"></colgroup>
-	<colgroup span="1" width="150"></colgroup>
-	<colgroup span="1" width="60"></colgroup>
-	<colgroup span="1" width="150"></colgroup>
-	<colgroup span="1" width="150"></colgroup>
-	<colgroup span="1" width="150"></colgroup>
-	<colgroup span="1" width="150"></colgroup>
-
-	<!-- 取得結果をループで回して表示用の領域に設定 -->
-	<TBODY>
-	<?php foreach ($loginDatas as $loginData): ?>
-
-		<!-- 各行にクリック時イベントを実装 -->
-		<TR onclick="Click_Sub(this)">
-		<td width="100"><?php echo $loginData['TLoginData']['emp_no']; ?>
-		</td>
-		<td width="200"><?php echo $loginData['TLoginData']['mail_address']; ?>
-		</td>
-		<td width="150"><?php echo $loginData['TLoginData']['password']; ?>
-		</td>
-		<td width="60"><?php echo $loginData['TLoginData']['authority']; ?>
-		</td>
-		<td width="150"><?php echo $loginData['TLoginData']['create_user']; ?>
-		</td>
-		<td width="150"><?php echo $loginData['TLoginData']['create_date']; ?>
-		</td>
-		<td width="150"><?php echo $loginData['TLoginData']['update_user']; ?>
-		</td>
-		<td width="150"><?php echo $loginData['TLoginData']['update_ymd']; ?>
-		</td>
-		</TR>
-	<?php endforeach; ?>
-	</TBODY></TABLE>
-	</DIV>
-	</TD>
-	</TR>
-</TBODY>
-</TABLE>
-
-<form action="/masterTLoginData/preUpdate" method="post" name="update_btn">
+<form name="update_btn" action="/masterTLoginData/preUpdate" method="post">
 	<input type="hidden" name="hidden_upd_no" value="0000" />
-	<p><input type="submit" value="更新" /></p>
 </form>
 
-<form action="/masterTLoginData/delete" method="post" name="delete_btn">
+<form name="delete_btn" action="/masterTLoginData/delete" method="post">
 	<input type="hidden" name="hidden_del_no" value="0000" />
-	<p><input type="submit" value="削除" /></p>
 </form>
 
-<form action="/masterTLoginData/back" method="post">
-	<p><input type="submit" value="戻る" /></p>
-</form>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<hr>
+			<p>Copyright &copy; Wiss1, Inc. All Rights Reserved.</p>
+		</div>
+	</div>
+</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
 </html>

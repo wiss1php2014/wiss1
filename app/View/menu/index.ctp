@@ -117,7 +117,7 @@
 					<div class="panel-heading">ユーザ情報管理</div>
 					<div class="panel-body">
 						<ul>
-							<li><a href="/menu/master">ユーザマスタ登録</a></li>
+							<li><a href="/master/loginData">ユーザマスタ登録</a></li>
 						</ul>
 					</div>
 				</div>
@@ -127,7 +127,7 @@
 					<div class="panel-heading">コード情報管理</div>
 					<div class="panel-body">
 						<ul>
-							<li><a href="/menu/master">コードマスタ登録</a></li>
+							<li><a href="/master">コードマスタ登録</a></li>
 						</ul>
 					</div>
 				</div>
@@ -137,7 +137,7 @@
 					<div class="panel-heading">社員情報管理</div>
 					<div class="panel-body">
 						<ul>
-							<li><a href="/menu/master">社員マスタ登録</a></li>
+							<li><a href="/master">社員マスタ登録</a></li>
 						</ul>
 					</div>
 				</div>
